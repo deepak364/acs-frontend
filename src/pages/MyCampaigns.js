@@ -5,7 +5,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import API from '../api/axios';
-import { useAuth } from '../context/AuthContext';
 import './MyCampaigns.css';
 
 const STATUS_CONFIG = {
@@ -25,7 +24,7 @@ const CATEGORY_COLORS = {
 };
 
 export default function MyCampaigns() {
-  const { user } = useAuth();
+  
   const [campaigns, setCampaigns] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('all');
