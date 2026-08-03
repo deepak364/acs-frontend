@@ -103,7 +103,7 @@ export function Login() {
           </form>
 
           {/* Demo credentials */}
-          <div className="auth-demo">
+          {/* <div className="auth-demo">
             <div className="auth-demo__label">Quick demo access</div>
             <div className="auth-demo__items">
               <button className="auth-demo__item" onClick={() => setForm({ email: 'admin@acs.com', password: 'password' })}>
@@ -113,7 +113,7 @@ export function Login() {
                 👤 User account
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
